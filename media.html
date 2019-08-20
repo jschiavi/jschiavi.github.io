@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+	<title>Joseph Schiavi - Media</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Joseph Schiavi">
+	<meta name="author" content="Joseph Schiavi">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<!--<script src="https://apis.google.com/js/platform.js"></script>-->
+  	<style>  	
+	body {
+  		font-family: Verdana, sans-serif;
+  		margin: 0;
+	}
+	
+	h2{color:#800000;}
+
+	* {
+  		box-sizing: border-box;
+	}
+
+	.row > .column {
+  		padding: 4px 4px;
+	}
+
+	.row:after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	.column {
+  		float: left;
+  		width: 16.5%;
+	}
+
+	/* The Modal (background) */
+	.modal {
+  		display: none;
+  		position: fixed;
+  		z-index: 1;
+  		padding-top: 100px;
+  		left: 0;
+  		top: 0;
+  		width: 100%;
+  		height: 100%;
+  		overflow: auto;
+  		background-color: black;
+	}
+
+	/* Modal Content */
+	.modal-content {
+  		position: relative;
+  		background-color: #fefefe;
+  		margin: auto;
+  		padding: 0;
+  		width: 90%;
+  		max-width: 1200px;
+	}
+
+	/* The Close Button */
+	.close {
+  		color: white;
+  		position: absolute;
+  		top: 50px;
+  		right: 25px;
+  		font-size: 35px;
+  		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+  		color: #999;
+  		text-decoration: none;
+  		cursor: pointer;
+	}
+
+	.mySlides {
+  		display: none;
+	}
+
+	.cursor {
+  		cursor: pointer
+	}
+
+	/* Next & previous buttons */
+	.prev,
+	.next {
+  		cursor: pointer;
+  		position: absolute;
+  		top: 50%;
+  		width: auto;
+  		padding: 16px;
+  		margin-top: -50px;
+  		color: white;
+  		font-weight: bold;
+  		font-size: 20px;
+  		transition: 0.6s ease;
+  		border-radius: 0 3px 3px 0;
+  		user-select: none;
+  		-webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+  		right: 0;
+  		border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+  		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+  		color: #f2f2f2;
+  		font-size: 12px;
+  		padding: 8px 12px;
+  		position: absolute;
+  		top: 0;
+	}
+
+	img {
+  		margin-bottom: -4px;
+	}
+
+	.caption-container {
+  		text-align: center;
+  		background-color: black;
+  		padding: 2px 16px;
+  		color: white;
+	}
+
+	.demo {
+  		opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+  		opacity: 1;
+	}
+
+	img.hover-shadow {
+  		transition: 0.3s
+	}
+
+	.hover-shadow:hover {
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	}
+</style>
+</head>
+
+<!-- body -->
+<body style="background-color:#E8CCDA;">
+
+<!-- nav bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="index.html">JS</a>
+    		</div>
+    		<ul class="nav navbar-nav">
+      			<li><a href="index.html">Home</a></li>
+      			<li><a href="coursework.html">Coursework</a></li>
+      			<li><a href="project.html">Senior Project</a></li>
+      			<li class="active"><a href="media.html">Media</a></l1>
+      			<li><a href="resume.html">Resume</a></l1>
+    		</ul>
+  		</div>
+	</nav>
+	
+<!-- content -->
+	<div class="container-fluid" style="margin-top:50px; margin-left:50px;">
+		<h2>Media</h2>
+		<h3>Videography</h3>
+		<!--<div class="g-ytsubscribe" data-channelid="UCjf3k4Yp8MGLy0WLuOBtUNw" data-layout="full" data-theme="dark" data-count="hidden"></div>-->
+		<iframe width="500" height="300" src="https://www.youtube.com/embed/sNa2IjzWghw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="500" height="300" src="https://www.youtube.com/embed/JukYFTsceZ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe width="500" height="300" src="https://www.youtube.com/embed/gEQzFUX7HKk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<br>
+		<h3>Film Photography</h3>		
+		<div class="row">
+			<div class="column">
+    			<img src="photos/film/film9.jpg" style="width:100%" onclick="openFilmModal();currentSlide(1)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/film/film3.jpg" style="width:100%" onclick="openFilmModal();currentSlide(2)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+   	 			<img src="photos/film/film2.jpg" style="width:100%" onclick="openFilmModal();currentSlide(3)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/film/film5.jpg" style="width:100%" onclick="openFilmModal();currentSlide(4)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/film/film7.jpg" style="width:100%" onclick="openFilmModal();currentSlide(5)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/film/film12.jpg" style="width:100%" onclick="openFilmModal();currentSlide(6)" class="hover-shadow cursor">
+  			</div>
+		</div>
+		<div id="myFilmModal" class="modal">
+  			<span class="close cursor" onclick="closeFilmModal()">&times;</span>
+  			<div class="modal-content">
+
+    			<div class="myFilmSlides">
+      				<div class="numbertext">1 / 6</div>
+      				<img src="photos/film/film9.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myFilmSlides">
+      				<div class="numbertext">2 / 6</div>
+      				<img src="photos/film/film3.jpg" style="width:100%">
+    			</div>
+
+    			<div class="myFilmSlides">
+      				<div class="numbertext">3 / 6</div>
+      				<img src="photos/film/film2.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myFilmSlides">
+      				<div class="numbertext">4 / 6</div>
+      				<img src="photos/film/film5.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myFilmSlides">
+      				<div class="numbertext">5 / 6</div>
+      				<img src="photos/film/film7.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myFilmSlides">
+      				<div class="numbertext">6 / 6</div>
+      				<img src="photos/film/film12.jpg" style="width:100%">
+    			</div>
+    
+    			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    			<div class="caption-container">
+      				<p id="filmCaption"></p>
+    			</div>
+
+
+    			<div class="column">
+      				<img class="filmDemo cursor" src="photos/film/film9.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cody, 2016">
+    			</div>
+    			<div class="column">
+      				<img class="filmDemo cursor" src="photos/film/film3.jpg" style="width:100%" onclick="currentSlide(2)" alt="New York, New York, 2015">
+    			</div>
+    			<div class="column">
+      				<img class="filmDemo cursor" src="photos/film/film2.jpg" style="width:100%" onclick="currentSlide(3)" alt="San Francisco, California, 2016">
+    			</div>
+    			<div class="column">
+      				<img class="filmDemo cursor" src="photos/film/film5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Positano, Italy, 2015">
+    			</div>
+    			<div class="column">
+      				<img class="filmDemo cursor" src="photos/film/film7.jpg" style="width:100%" onclick="currentSlide(5)" alt="San Francisco, California, 2016">
+    			</div>
+    			<div class="column">
+      				<img class="filmDemo cursor" src="photos/film/film12.jpg" style="width:100%" onclick="currentSlide(6)" alt="Florence, Italy, 2015">
+    			</div>
+  			</div>	
+		</div>
+		<br><br><br>
+		<script>		
+		function openFilmModal() {
+  			document.getElementById('myFilmModal').style.display = "block";
+		}
+		
+		function closeFilmModal() {
+  			document.getElementById('myFilmModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			var slides = document.getElementsByClassName("myFilmSlides");
+  			var dots = document.getElementsByClassName("filmDemo");
+  			var captionText = document.getElementById("filmCaption");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+  			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+	</div>	
+
+<!-- footer -->
+	<div class="footer" style="left:0; bottom:0; width:100%; text-align:center; position:fixed;">
+		<p>&copy; 2019 joeyschiavi@gmail.com | (239) 292-4758 | linkedin.com/in/joey-schiavi/</p>
+	</div>	
+</body>
+</html>

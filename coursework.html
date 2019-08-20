@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<head>
+	<title>Joseph Schiavi - Coursework</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Joseph Schiavi">
+	<meta name="author" content="Joseph Schiavi">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<style>
+	body {
+  		font-family: Verdana, sans-serif;
+  		margin: 0;
+	}
+
+	* {
+  		box-sizing: border-box;
+	}
+	
+	h2 {
+		color: #800000;
+	}
+
+	.row > .column {
+  		padding: 4px 4px;
+	}
+
+	.row:after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	.column {
+  		float: left;
+  		width: 16.5%;
+	}
+
+	/* The Modal (background) */
+	.modal {
+  		display: none;
+  		position: fixed;
+  		z-index: 1;
+  		padding-top: 100px;
+  		left: 0;
+  		top: 0;
+  		width: 100%;
+  		height: 100%;
+  		overflow: auto;
+  		background-color: black;
+	}
+
+	/* Modal Content */
+	.modal-content {
+  		position: relative;
+  		background-color: #fefefe;
+  		margin: auto;
+  		padding: 0;
+  		width: 90%;
+  		max-width: 1200px;
+	}
+
+	/* The Close Button */
+	.close {
+  		color: white;
+  		position: absolute;
+  		top: 50px;
+  		right: 25px;
+  		font-size: 35px;
+  		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+  		color: #999;
+  		text-decoration: none;
+  		cursor: pointer;
+	}
+
+	.mySlides {
+  		display: none;
+	}
+
+	.cursor {
+  		cursor: pointer
+	}
+
+	/* Next & previous buttons */
+	.prev,
+	.next {
+  		cursor: pointer;
+  		position: absolute;
+  		top: 50%;
+  		width: auto;
+  		padding: 16px;
+  		margin-top: -50px;
+  		color: white;
+  		font-weight: bold;
+  		font-size: 20px;
+  		transition: 0.6s ease;
+  		border-radius: 0 3px 3px 0;
+  		user-select: none;
+  		-webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+  		right: 0;
+  		border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+  		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+  		color: #f2f2f2;
+  		font-size: 12px;
+  		padding: 8px 12px;
+  		position: absolute;
+  		top: 0;
+	}
+
+	img {
+  		margin-bottom: -4px;
+	}
+
+	.caption-container {
+  		text-align: center;
+  		background-color: black;
+  		padding: 2px 16px;
+  		color: white;
+	}
+
+	.demo {
+  		opacity: 0.6;
+	}
+
+	.active,
+	.demo:hover {
+  		opacity: 1;
+	}
+
+	img.hover-shadow {
+  		transition: 0.3s
+	}
+
+	.hover-shadow:hover {
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	}
+</style>
+</head>
+
+<!-- body -->
+<body style="background-color:#E8CCDA;">
+
+<!-- nav bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="index.html">JS</a>
+    		</div>
+    		<ul class="nav navbar-nav">
+      			<li><a href="index.html">Home</a></li>
+      			<li class="active"><a href="coursework.html">Coursework</a></li>
+      			<li><a href="project.html">Senior Project</a></li>
+      			<li><a href="media.html">Media</a></l1>
+      			<li><a href="resume.html">Resume</a></l1>
+    		</ul>
+  		</div>
+	</nav>
+	
+<!-- content -->
+	<div class="container-fluid" style="margin-top:50px; margin-left:50px;">
+		<h2>Digital Arts</h2>
+		<h3>Theory and Practice of Multimedia Production (CAP 3020)</h3>
+		<h4>Lines of Conquest</h4>
+		<img src="photos/game/loc1.png" alt="Lines of Conquest, Logo" height="200" width="300">
+		<img src="photos/game/loc2.png" alt="Lines of Conquest, Cover Art" height="200" width="300">
+		<img src="photos/game/loc3.png" alt="Lines of Conquest, Characters" height="300" width="200">
+		<img src="photos/game/loc4.png" alt="Lines of Conquest, Boss Battle" height="200" width="300">
+		<img src="photos/game/loc5.png" alt="Lines of Conquest, Cutscene" height="200" width="300">
+		<p>Created using Unity, GarageBand, Adobe Illustrator, Adobe Photoshop. Spring 2016.</p>
+		<ul>
+			<li>2D side-scrolling Role-Playing Game (RPG).</li>
+			<li>Throughout gameplay you recruit new allies, upgrade soldiers and weapons.</li>
+			<li>Three types of gameplay: lane battles, non-combat cutscenes, and boss battles.</li>
+			<li>Retro, 8-bit aesthetic. Pixel art assets and low-sampled audio.</li>
+			<li>Final game delivered with complete merchandise packaging, game manual, and promotional material along with a full demo day.</li>
+		</ul>
+		<p>Audio Lead</p>
+		<ul>
+			<li>Composed, recorded and mastered all songs used during gameplay. 19 songs in total.</li>
+		</ul>
+		<p>Other Contributions</p>
+		<ul>
+			<li>Story: plot development and themes for the narrative, character personalities and appearances, level design, town profiles.</li>
+			<li>Art: concept art, sprites, packaging and promotional material.</li>
+			<li>Tech: boss battle mechanics, game engine animations (controllers, scripts, and prefabs), Scene setup, boss battle script, full audio integration.</li>
+		</ul>
+		<h3>Intro to Computer Aided Modeling (CAP 3220)</h3>
+		<p>Created using Maya. Spring 2016.</p>
+		<div class="row">
+  			<div class="column">
+    			<img src="photos/modeling/modeling2_1.png" style="width:100%" onclick="openModelingModal();currentSlide(1)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/modeling/modeling2_2.png" style="width:100%" onclick="openModelingModal();currentSlide(2)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+   	 			<img src="photos/modeling/modeling2_3.png" style="width:100%" onclick="openModelingModal();currentSlide(3)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/modeling/bedroom1.jpg" style="width:100%" onclick="openModelingModal();currentSlide(4)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/modeling/bedroom2.jpg" style="width:100%" onclick="openModelingModal();currentSlide(5)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/modeling/bedroom3.jpg" style="width:100%" onclick="openModelingModal();currentSlide(6)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/modeling/progress13.jpg" style="width:100%" onclick="openModelingModal();currentSlide(7)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/modeling/progress14.jpg" style="width:100%" onclick="openModelingModal();currentSlide(8)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+   	 			<img src="photos/modeling/render1.jpg" style="width:100%" onclick="openModelingModal();currentSlide(9)" class="hover-shadow cursor">
+  			</div>
+		</div>
+
+		<div id="myModelingModal" class="modal">
+  			<span class="close cursor" onclick="closeModelingModal()">&times;</span>
+  			<div class="modal-content">
+
+    			<div class="myModelingSlides">
+      				<div class="numbertext">1 / 9</div>
+      				<img src="photos/modeling/modeling2_1.png" style="width:100%">
+    			</div>
+
+    			<div class="myModelingSlides">
+      				<div class="numbertext">2 / 9</div>
+      				<img src="photos/modeling/modeling2_2.png" style="width:100%">
+    			</div>
+
+    			<div class="myModelingSlides">
+      				<div class="numbertext">3 / 9</div>
+      				<img src="photos/modeling/modeling2_3.png" style="width:100%">
+    			</div>
+    
+    			<div class="myModelingSlides">
+      				<div class="numbertext">4 / 9</div>
+      				<img src="photos/modeling/bedroom1.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myModelingSlides">
+      				<div class="numbertext">5 / 9</div>
+      				<img src="photos/modeling/bedroom2.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myModelingSlides">
+      				<div class="numbertext">6 / 9</div>
+      				<img src="photos/modeling/bedroom3.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myModelingSlides">
+      				<div class="numbertext">7 / 9</div>
+      				<img src="photos/modeling/progress13.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myModelingSlides">
+      				<div class="numbertext">8 / 9</div>
+      				<img src="photos/modeling/progress14.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myModelingSlides">
+      				<div class="numbertext">9 / 9</div>
+      				<img src="photos/modeling/render1.jpg" style="width:100%">
+    			</div>
+    
+    			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    			<div class="caption-container">
+      				<p id="modelingCaption"></p>
+    			</div>
+
+
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/modeling2_1.png" style="width:100%" onclick="currentSlide(1)" alt="Project 2: Create and texture character model. Spongebob Squarepants. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/modeling2_2.png" style="width:100%" onclick="currentSlide(2)" alt="Project 2. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/modeling2_3.png" style="width:100%" onclick="currentSlide(3)" alt="Project 2. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/bedroom1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Project 4: Texture and light model room, 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/bedroom2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Project 4. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/bedroom3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Project 4. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/progress13.jpg" style="width:100%" onclick="currentSlide(7)" alt="Final Project: Create, texture, and light a building on campus. Fine Arts Building B. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/progress14.jpg" style="width:100%" onclick="currentSlide(8)" alt="Final Project. 2014.">
+    			</div>
+    			<div class="column">
+      				<img class="modelingDemo cursor" src="photos/modeling/render1.jpg" style="width:100%" onclick="currentSlide(9)" alt="Final Project. 2014.">
+    			</div>
+  			</div>	
+		</div>
+		<h3>Intro to Computer Aided Animation (CAP 3034)</h3>
+		<p>Created using Maya. Spring 2016.</p>
+		<video width="450" controls>
+  			<source src="videos/animation3_1.ogg" type="video/ogg">
+		</video>
+		<video width="450" controls>
+  			<source src="videos/animation1.ogg" type="video/ogg">
+		</video>
+		<video width="450" controls>
+  			<source src="videos/animation_final.ogg" type="video/ogg">
+		</video>
+		<br>
+		<h3>Intro to Digital Photography (PGY 3820)</h3>
+		<p>Edited using Adobe Photoshop. Summer 2015</p>
+		<div class="row">
+  			<div class="column">
+    			<img src="photos/digital/digital1.jpg" style="width:100%" onclick="openDigitalModal();currentSlide(1)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/digital/digital2.jpg" style="width:100%" onclick="openDigitalModal();currentSlide(2)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/digital/digital4.jpg" style="width:100%" onclick="openDigitalModal();currentSlide(4)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/digital/digital5.jpg" style="width:100%" onclick="openDigitalModal();currentSlide(5)" class="hover-shadow cursor">
+  			</div>
+  			<div class="column">
+    			<img src="photos/digital/digital6.jpg" style="width:100%" onclick="openDigitalModal();currentSlide(6)" class="hover-shadow cursor">
+  			</div>
+		</div>
+
+		<div id="myDigitalModal" class="modal">
+  			<span class="close cursor" onclick="closeDigitalModal()">&times;</span>
+  			<div class="modal-content">
+
+    			<div class="myDigitalSlides">
+      				<div class="numbertext">1 / 5</div>
+      				<img src="photos/digital/digital1.jpg" style="width:100%">
+    			</div>
+
+    			<div class="myDigitalSlides">
+      				<div class="numbertext">2 / 5</div>
+      				<img src="photos/digital/digital2.jpg" style="width:100%">
+    			</div>
+    
+    			<div class="myDigitalSlides">
+      				<div class="numbertext">3 / 5</div>
+      				<img src="photos/digital/digital4.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myDigitalSlides">
+      				<div class="numbertext">4 / 5</div>
+      				<img src="photos/digital/digital5.jpg" style="width:100%">
+    			</div>
+    			
+    			<div class="myDigitalSlides">
+      				<div class="numbertext">5 / 5</div>
+      				<img src="photos/digital/digital6.jpg" style="width:100%">
+    			</div>
+    
+    			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    			<div class="caption-container">
+      				<p id="digitalCaption"></p>
+    			</div>
+
+
+    			<div class="column">
+      				<img class="digitalDemo cursor" src="photos/digital/digital1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Florence, Italy, 2015">
+    			</div>
+    			<div class="column">
+      				<img class="digitalDemo cursor" src="photos/digital/digital2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Florence, Italy, 2015">
+    			</div>
+    			<div class="column">
+      				<img class="digitalDemo cursor" src="photos/digital/digital4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Florence, Italy, 2015">
+    			</div>
+    			<div class="column">
+      				<img class="digitalDemo cursor" src="photos/digital/digital5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Florence, Italy, 2015">
+    			</div>
+    			<div class="column">
+      				<img class="digitalDemo cursor" src="photos/digital/digital6.jpg" style="width:100%" onclick="currentSlide(5)" alt="Florence, Italy, 2015">
+    			</div>
+  			</div>	
+		</div>
+		<h3>Interactive Modeling and Animation (CAP 3032)</h3>
+		<p>Created using Processing. Spring 2016.<br> Coming soon.</p>
+		<br>
+		<h2>Computer Science</h2>
+		<h3>Human-Computer Interaction (CEN 4720)</h3>
+		<h4>iOS Mobile Application - ParkUF</h4>
+		<iframe width="400" height="250" src="https://www.youtube.com/embed/-fXuQSQUvEY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<p>Created using Xcode, Swift, Objective-C, Adobe Photoshop. Spring 2017.</p>
+		<ul>
+			<li>An iOS mobile application developed for students, faculty, and staff at the University of Florida.</li>
+			<li>Shows the locations of all available parking based on a given decal.</li>
+			<li>Uses GoogleMaps SDK for an intuitive user interaction.</li>
+			<li>Performed as Scrum Master. Other positions included Project Manager and User Studies.</li>
+			<li>Completed CITI Certification, created weekly sprint plans, conducted user study and feedback sessions.</li>
+		</ul>
+		<h3>Intro to Digital Arts and Sciences (CAP 3027)</h3>
+		<p>Created using Java, Swing. Fall 2015.</p>
+		<img src="photos/software/das1.png" alt="Bilinear Gradient" height="300" width="300">
+		<img src="photos/software/das4.png" alt="OpArt 2" height="300" width="300">
+		<img src="photos/software/das7.png" alt="Affine Transformation 1" height="300" width="300">
+		<img src="photos/software/das8.png" alt="Affine Transformation 2" height="300" width="300">
+		<img src="photos/software/das9.png" alt="Affine Transformation 3" height="300" width="300">
+		<img src="photos/software/das6.png" alt="Random Walk Plant" height="300" width="300">
+		<img src="photos/software/julia1.png" alt="Fractal Explorer, Julia Set" height="200" width="300">
+		<img src="photos/software/julia2.png" alt="Fractal Explorer, Julia Set" height="200" width="300">
+		<img src="photos/software/mandelbrot2.png" alt="Fractal Explorer, Mandelbrot Set" height="200" width="300">
+		<img src="photos/software/image2.png" alt="Fractal Explorer" height="200" width="300">
+		<br><br>
+		<h3>iOS Development with Swift (CIS 4930)</h3>
+		<p>Created using Xcode, Swift. Spring 2015.</p>
+		<img src="photos/apps/schedule1.png" alt="Swift Scheduler, Adding Time Constraint" height="400" width="200">
+		<img src="photos/apps/schedule2.png" alt="Swift Scheduler, Shift Creation" height="400" width="200">
+		<br><br>
+		<ul>
+			<li>Mobile application developed for managers or shift leads.</li>
+			<li>Collects user submitted data to create a weekly schedule of shifts based on employees' availability and scheduling demands.</li>
+			<li>Complete User Manual and Technical Manual.</li>
+		</ul>
+		<br><br><br>
+		<script>
+		var modalid;
+		function openDigitalModal() {
+  			document.getElementById('myDigitalModal').style.display = "block";
+  			modalid = 1;
+		}
+		
+		function openModelingModal() {
+  			document.getElementById('myModelingModal').style.display = "block";
+  			modalid = 2;
+		}
+		
+		function closeDigitalModal() {
+  			document.getElementById('myDigitalModal').style.display = "none";
+		}
+
+		function closeModelingModal() {
+  			document.getElementById('myModelingModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			if (modalid == 1) {
+  				var slides = document.getElementsByClassName("myDigitalSlides");
+  				var dots = document.getElementsByClassName("digitalDemo");
+  				var captionText = document.getElementById("digitalCaption");
+  			}
+  			if (modalid == 2) {
+  				var slides = document.getElementsByClassName("myModelingSlides");
+  				var dots = document.getElementsByClassName("modelingDemo");
+  				var captionText = document.getElementById("modelingCaption");
+  			}
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+      			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) {
+      			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+  			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+	</div>
+
+<!-- footer -->
+	<div class="footer" style="left:0; bottom:0; width:100%; text-align:center; position:fixed;">
+		<p>&copy; 2019 joeyschiavi@gmail.com | (239) 292-4758 | linkedin.com/in/joey-schiavi/</p>
+	</div>	
+</body>
+</html>
